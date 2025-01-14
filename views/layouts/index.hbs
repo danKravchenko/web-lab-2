@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/media.css" type="text/css">
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="/images/burger-menu.png" alt="hamburger-menu" width="40" height="50" onclick="openMenu()">
+            <img src="/images/logo.png" alt="logo" class="logo">
+            <ul class="header-links-list">
+                <li><a href="/">Головна</a></li>
+                <li><a href="/my-university">Мій ЗВО</a></li>
+                <li><a href="/contacts">Контакти</a></li>
+                <li><a>Про мене &#x25BC;</a>
+                    <ul class="dropdown-links-list">
+                        <li><a href="/about-author">Біографія</a></li>
+                        <li><a href="/hobby">Захоплення</a></li>
+                        <li><a href="/my-group">Моя група</a></li>
+                        <li><a href="/my-profession">Моя професія</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-data-wrapper">
+            <h1>{{heading}}</h1>
+            <hr>
+            {{{body}}}
+        </div>
+    </main>
+    <footer>
+        <div class="about">
+            <div>
+                <img src="/images/logo.png" alt="logo" class="logo">
+                <p style="font-size: 19px; margin: 10px 0;">Персональний сайт студента</p>
+                <a href="/about-author">Більше про мене</a>
+            </div>
+            <div class="footer-links-list">
+                <ul>
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="/my-university">Мій ЗВО</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/contacts">Контакти</a></li>
+                    <li><a href="/hobby">Захоплення</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/my-group">Моя група</a></li>
+                    <li><a href="/my-profession">Моя професія</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-networks">
+            <h4>Я в соцмережах:</h4>
+            <div class="social-networks-links">
+                <a href="https://web.telegram.org" target="_blank"><img src="/images/telegram-icon.png"
+                        alt="telegram-icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="/images/instagram-icon.png"
+                        alt="instagram-icon"></a>
+                <a href="https://www.tiktok.com" target="_blank"><img src="/images/tiktok-icon.png"
+                        alt="tiktok-icon"></a>
+                <a href="https://ua.linkedin.com" target="_blank"><img src="/images/linkedin-icon.png"
+                        alt="linkedin-icon"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="/images/facebook-icon.png"
+                        alt="facebook-icon"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>&#169; 2025 Данило Кравченко | Майже всі права захищені</span>
+        </div>
+    </footer>
+    <div id="splash-screen"></div>
+    <div id="burger-menu">
+        <img src="/images/close-icon.png" alt="close" onclick="closeMenu()" width="50" height="50">
+        <ul class="links-list">
+            <li><a href="/">Головна</a></li>
+            <li><a href="/my-university">Мій ЗВО</a></li>
+            <li><a href="/contacts">Контакти</a></li>
+            <li><a href="/about-author">Біографія</a></li>
+            <li><a href="/hobby">Захоплення</a></li>
+            <li><a href="/my-group">Моя група</a></li>
+            <li><a href="/my-profession">Моя професія</a></li>
+        </ul>
+    </div>
+    <script src="/scripts/getElementsSize.js"></script>
+    <script src="/scripts/setActiveLink.js"></script>
+    <script src="/scripts/burgerMenu.js"></script>
+</body>
+
+</html>

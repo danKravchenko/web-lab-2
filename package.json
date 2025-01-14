@@ -1,0 +1,19 @@
+{
+  "name": "lab01",
+  "version": "1.0.0",
+  "description": "Лабораторна робота з веб-програмування № 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon exec js,json,hbs",
+    "start": "node server.js"
+  },
+  "author": "Danylo Kravchenko",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1"
+  }
+}
